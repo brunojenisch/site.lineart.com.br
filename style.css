@@ -945,7 +945,8 @@ input {
         text-align: center;
     }
     .area_slide {
-        width: 370px;
+        width: 100%;
+        max-width: 370px;
     }
     .navigation { 
         transform: translate(18px, 590px);
@@ -1036,7 +1037,7 @@ input {
         line-height: 25px;
     }
     .button_price h2 {
-        font-size: 18px;
+        font-size: 16px;
     }
     .seguro_selo, .price_split img {
         width: 100%;
@@ -1143,7 +1144,7 @@ input {
         font-size: 26px;
     }
     .prices h2 {
-        font-size: 10px;
+        font-size: 9px;
     }
     .sub_title_7 h2 {
         font-size: 21px;
@@ -1158,9 +1159,14 @@ input {
 }
 @media( max-width:375px) {
     .button_price h2 {
-        font-size: 16px;
+        font-size: 14px;
     }
     .prices h2 {
-        font-size: 9px;
+        font-size: 8px;
+    }
+}
+@media(max-width: 360px) {
+    .slide {
+        padding: 0px 10px 0px 2px;
     }
 }
