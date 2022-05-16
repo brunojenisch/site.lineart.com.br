@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap');
+@font-face {
+    font-family: 'Open Sans';
+    src: url(font/OpenSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(font/OpenSans-ExtraBold.ttf);
+}
 * {
     font-family: "Montserrat", "Sans-serif";
 }
@@ -84,6 +91,8 @@ body {
     width: 100%;
 }
 .whatsaap {
+    display: none;
+    animation: 1s ease 0s 1 icon;
     position: fixed;
     right: 20px;
     bottom: 30px;
@@ -440,13 +449,13 @@ body {
 }
 .title_criador h2 {
     color: #454545;
-    font-family: "Open Sans", Sans-serif;
+    font-family: "Open Sans";
     font-size: 23px;
-    font-weight: 900;
+    font-weight: 800;
     margin: 0px;
 }
 .sub_title_criador p { 
-    font-family: "Open Sans", "Sans-serif";
+    font-family: "Open Sans";
     font-size: 18px;
     font-weight: 500;
     max-width: 550px;
@@ -469,7 +478,6 @@ body {
     flex-direction: column;
     max-width: 1140px;
     width: 100%;
-    padding: 0px 20px;
 }
 .area_alunos {
     display: flex;
@@ -725,7 +733,7 @@ input {
 .title_garantia h2 {
     margin-bottom: 15px;
     font-size: 19px;
-    font-weight: 700;
+    font-weight: 800;
     text-transform: uppercase;
 }
 .sub_title_garantia p { 
@@ -997,10 +1005,24 @@ input {
     }
 }
 @media( max-width:425px ) {
+    .whatsaap {
+        width: 60px;
+        height: 60px;
+    }
+    .icon_w {
+        right: 20px;
+        bottom: 80px;
+        height: 25px;
+        width: 25px;
+    }
+    .icon_w h2 {
+        line-height: 25px;
+    }
     .button_price h2 {
         font-size: 18px;
     }
     .seguro_selo, .price_split img {
+        width: 100%;
         max-width: 380px !important;
     }
     .area_garantia {
@@ -1008,18 +1030,27 @@ input {
     }
     .title_8 h2 {
         text-align: center;
+        font-size: 21px;
+        padding: 0px 20px;
     }
     .alunos_desenhos h2 {
         font-size: 26px;
     }
+    .sub_title_garantia p {
+       margin-bottom: 40px;
+    }
     .split h2 {
-        font-size: 40px;
+        font-size: 30px;
     }
     .size_s {
         font-size: 30px;
     }
+    .price_split p {
+        font-size: 17px;
+    }
     .title_9 h2 {
-        font-size: 30px;
+        font-size: 20px;
+        padding: 0px 20px;
     }
     .sub_title_9 h2 {
         font-size: 18px;
@@ -1033,15 +1064,80 @@ input {
         font-size: 18px;
     }
     .title_valor h2 {
-        font-size: 30px;
+        font-size: 25px;
     }
     .valor h2 {
-        font-size: 60px;
+        font-size: 55px;
     }
     .gratis h2 {
-        font-size: 30px;
+        font-size: 23px;
+        padding: 0px 20px;
+    }
+    .sub_title_criador p {
+        font-size: 16px;
+    }
+    .area_alunos h2 {
+        font-size: 22px;
     }
     .bonus_e {
         margin: 40px 10px 40px 10px;
+    }
+    .area_principal h2 {
+        font-size: 20px;
+    }
+    .area_principal p {
+        font-size: 14px;
+    }
+    .title_1 h3 {
+        font-size: 20px;
+    }
+    .text_2 h3 {
+        font-size: 25px;
+        margin-top: 50px;
+    }
+    .title_2 h2 {
+        font-size: 20px;
+    }
+    .text p {
+        font-size: 17px;
+    }
+    .title_certificate h2 {
+        font-size: 25px;
+    }
+    .sub_title_certificate p {
+        font-size: 17px;
+    }
+    .title_4 h2 {
+        font-size: 20px;
+    }
+    .sub_title_4 h2 {
+        font-size: 16px;
+    }
+    .title_4_b h2 {
+        font-size: 20px;
+    }
+    .bonus_1, .bonus_2, .bonus_3, .bonus_4, .bonus_5, .bonus_6 {
+        padding: 20px;
+    }
+    .video_1, .video_2, .video_3, .video_4 {
+        padding: 8px 20px;
+    }
+    .title_7 h2 {
+        font-size: 26px;
+    }
+    .prices h2 {
+        font-size: 11px;
+    }
+    .sub_title_7 h2 {
+        font-size: 21px;
+    }
+    
+}
+@media( max-width:375px) {
+    .button_price h2 {
+        font-size: 16px;
+    }
+    .prices h2 {
+        font-size: 10px;
     }
 }

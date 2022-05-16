@@ -43,11 +43,22 @@
     </div>
 
     <script>
-        let icon = document.querySelector(".icon_w");
 
-        setTimeout(() => {
-            icon.style.display = "flex";
-        }, 10000);
+        function whatsaap() {
+            //Botão whatsaap
+            let whats = document.querySelector(".whatsaap");
+            setTimeout(() => {
+                whats.style.display = "flex";
+            }, 10000);//Atualmente 10 segundos
+
+            //Número em cima do botão
+            let icon = document.querySelector(".icon_w");
+            setTimeout(() => {
+                icon.style.display = "flex";
+            }, 20000);//Atualmente 20 segundos
+
+        }
+        whatsaap();
 
         function thumb() {
             let thumbnail = document.querySelector(".thumbnail");
@@ -66,10 +77,9 @@
                 document.querySelector(".modal").style.display = "none";
                 video.pause();
             });
-
-
         }
         thumb();
+
     </script>
     <section class="curso">
         <div class="container_1">
