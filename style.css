@@ -617,7 +617,6 @@ input {
 .price {
     display: flex;
     align-items: center;
-    padding: 0px 20px;
 }
 .prices img {
     width: 28px;
