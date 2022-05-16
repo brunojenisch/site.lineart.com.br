@@ -3,6 +3,10 @@
     src: url(font/OpenSans-SemiBold.ttf);
 }
 @font-face {
+    font-family: 'Open Sans Medium';
+    src: url(font/OpenSans-Medium.ttf);
+}
+@font-face {
     font-family: 'Open Sans';
     src: url(font/OpenSans-ExtraBold.ttf);
 }
@@ -455,7 +459,7 @@ body {
     margin: 0px;
 }
 .sub_title_criador p { 
-    font-family: "Open Sans";
+    font-family: "Open Sans Medium";
     font-size: 18px;
     font-weight: 500;
     max-width: 550px;
@@ -482,10 +486,15 @@ body {
 .area_alunos {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     max-width: 1120px;
     margin-bottom: 80px;
+}
+.videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .area_alunos h2 {
     text-align: center;
@@ -538,28 +547,28 @@ body {
     position: absolute;
     transform: translate(472px, 590px);
 }
-
+.navigation p {
+    margin: 0px;
+    text-align: center;
+    color: #fff;
+}
 .bar {
     width: 70px;
     height: 20px;
-    border: 2px solid #fff;
     margin: 0px 6px;
     cursor: pointer;
     transition: .4s;
-}
-.bar:hover {
-    background-color: #fff;
 }
 input {
     display: none;
 }
 #slide_1:checked ~ .s1 {
     margin-left: 0px;
-    transition: all ease .2s;
+    transition: all ease 500ms;
 }
 #slide_2:checked ~ .s1 {
     margin-left: -25%;
-    transition: all ease .2s;
+    transition: all ease 500ms;
 }
 .s3, .s4 {
     display: none;
@@ -944,14 +953,16 @@ input {
     }
     .s3, .s4 {
         display: flex;
+        align-items: center;
+        justify-content: center;
     }
     #slide_3:checked ~ .s1 {
         margin-left: -50%;
-        transition: all ease .2s;
+        transition: all ease 500ms;
     }
     #slide_4:checked ~ .s1 {
         margin-left: -75%;
-        transition: all ease .2s;
+        transition: all ease 500ms;
     }
     .area_garantia_int {
         flex-direction: column;
@@ -970,6 +981,13 @@ input {
     }
     .title_footer h2,  .sub_title_footer p, .number h2{
         text-align: center;
+    }
+    .area_alunos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .videos {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 @media(max-width:768px) {
@@ -1117,7 +1135,7 @@ input {
         font-size: 20px;
     }
     .bonus_1, .bonus_2, .bonus_3, .bonus_4, .bonus_5, .bonus_6 {
-        padding: 20px;
+        padding: 15px 10px 15px 10px;
     }
     .video_1, .video_2, .video_3, .video_4 {
         padding: 8px 20px;
@@ -1126,10 +1144,16 @@ input {
         font-size: 26px;
     }
     .prices h2 {
-        font-size: 11px;
+        font-size: 10px;
     }
     .sub_title_7 h2 {
         font-size: 21px;
+    }
+    .area_price_int {
+        margin: 0px 10px;
+    }
+    .bonus_texts {
+        padding: 0px;
     }
     
 }
@@ -1138,6 +1162,6 @@ input {
         font-size: 16px;
     }
     .prices h2 {
-        font-size: 10px;
+        font-size: 9px;
     }
 }
