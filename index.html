@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Fórmula da Arte – A Maior Escola de Desenhos Online do Brasil</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preload" as="style" href="style.css" >
+    <link rel="preload" as="font" href="font/OpenSans-Medium.ttf">
+    <link rel="preload" as="font" href="font/OpenSans-ExtraBold.ttf">
+    <link rel="preload" as="font" href="font/OpenSans-SemiBold.ttf">
     <link rel="preload" as="image" href="img/banner.webp">
-    
+    <link rel="preload" as="image" href="img/thumbnail.gif">
+    <link rel="preload" as="image" href="img_bonus/bonus-anime-express-768x644-1.webp">
     <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -60,46 +65,6 @@ src="https://www.facebook.com/tr?id=2919974364954626&ev=PageView&noscript=1"
         </div>
 
     </div>
-
-    <script>
-
-        function whatsaap() {
-            //Botão whatsaap
-            let whats = document.querySelector(".whatsaap");
-            setTimeout(() => {
-                whats.style.display = "flex";
-            }, 10000);//Atualmente 10 segundos
-
-            //Número em cima do botão
-            let icon = document.querySelector(".icon_w");
-            setTimeout(() => {
-                icon.style.display = "flex";
-            }, 20000);//Atualmente 20 segundos
-
-        }
-        whatsaap();
-
-        function thumb() {
-            let thumbnail = document.querySelector(".thumbnail");
-            let close = document.querySelector(".close");
-
-            var video = document.getElementById("video_principal");
-
-            thumbnail.addEventListener("click", () => {
-                video.autoplay = true;
-                video.load();
-                document.querySelector(".modal").style.display = "flex";
-
-            });
-
-            close.addEventListener("click", () => {
-                document.querySelector(".modal").style.display = "none";
-                video.pause();
-            });
-        }
-        thumb();
-
-    </script>
     <section class="curso">
         <div class="container_1">
             <div class="container_1_int">
@@ -165,7 +130,7 @@ src="https://www.facebook.com/tr?id=2919974364954626&ev=PageView&noscript=1"
                 <div class="area_arte">
                     <div class="arte">
                         <div class="arte_1">
-                            <img src="img/Curso-de-Desenho-Infantil.webp" alt="CURSO DE DESENHO INFANTIL">
+                            <img loading="lazy" src="img/Curso-de-Desenho-Infantil.webp" alt="CURSO DE DESENHO INFANTIL">
 
                             <div class="arte_texts">
                                 <div class="title_2">
@@ -201,11 +166,11 @@ src="https://www.facebook.com/tr?id=2919974364954626&ev=PageView&noscript=1"
                                     </p>
                                 </div>
                             </div>
-                            <img src="img/Imagem-Anime-Express.webp" alt="ANIME EXPRESS">
+                            <img loading="lazy" src="img/Imagem-Anime-Express.webp" alt="ANIME EXPRESS">
 
                         </div>
                         <div class="arte_3">
-                            <img src="img/Realismo-Express.webp" alt="REALISMO EXPRESS">
+                            <img loading="lazy" src="img/Realismo-Express.webp" alt="REALISMO EXPRESS">
                             <div class="arte_texts">
                                 <div class="title_2">
                                     <h2>Curso #03</h2>
@@ -240,11 +205,11 @@ src="https://www.facebook.com/tr?id=2919974364954626&ev=PageView&noscript=1"
                                     </p>
                                 </div>
                             </div>
-                            <img src="img/Desenhando-Princesas.webp" alt="DESENHANDO PRINCESAS">
+                            <img loading="lazy" src="img/Desenhando-Princesas.webp" alt="DESENHANDO PRINCESAS">
 
                         </div>
                         <div class="arte_5">
-                            <img src="img/Desenhando-Animais.webp" alt="DESENHANDO ANIMAIS">
+                            <img loading="lazy" src="img/Desenhando-Animais.webp" alt="DESENHANDO ANIMAIS">
                             <div class="arte_texts">
                                 <div class="title_2">
                                     <h2>Curso #05</h2>
@@ -282,7 +247,7 @@ src="https://www.facebook.com/tr?id=2919974364954626&ev=PageView&noscript=1"
 
                         </div>
                         <div class="arte_7">
-                            <img src="img/Como-Desenhar-Em-Perspectiva.webp" alt="DESENHANDO EM PERSPECTIVA">
+                            <img loading="lazy" src="img/Como-Desenhar-Em-Perspectiva.webp" alt="DESENHANDO EM PERSPECTIVA">
                             <div class="arte_texts">
                                 <div class="title_2">
                                     <h2>Curso #07</h2>
@@ -316,7 +281,7 @@ src="https://www.facebook.com/tr?id=2919974364954626&ev=PageView&noscript=1"
                                 </div>
                             </div>
 
-                            <img src="img/Desenhando-Chibis.webp" alt="COMO DESENHAR CHIBIS">
+                            <img loading="lazy" src="img/Desenhando-Chibis.webp" alt="COMO DESENHAR CHIBIS">
 
                         </div>
                     </div>
@@ -331,7 +296,7 @@ src="https://www.facebook.com/tr?id=2919974364954626&ev=PageView&noscript=1"
             <div class="container_3_int">
                 <div class="area_certificate">
 
-                    <img src="img/Certificado-Formula-da-Arte.webp" alt="Certificado" />
+                    <img loading="lazy" src="img/Certificado-Formula-da-Arte.webp" alt="Certificado" />
                     <div class="certificate_texts">
                         <div class="title_certificate">
                             <h2>Certificado de Conclusão</h2>
@@ -353,7 +318,7 @@ src="https://www.facebook.com/tr?id=2919974364954626&ev=PageView&noscript=1"
     </section>
 
     <section class="bonus_e">
-        <img src="img_bonus/bonus-anime-express-768x644-1.webp" alt="Bonus anime">
+        <img loading="lazy" src="img_bonus/bonus-anime-express-768x644-1.webp" alt="Bonus anime">
     </section>
 
     <section class="bonus">
@@ -372,7 +337,7 @@ src="https://www.facebook.com/tr?id=2919974364954626&ev=PageView&noscript=1"
                 </div>
 
                 <div class="bonus_1">
-                    <img src="img_bonus/Bonus-01-min.webp" alt="Vivendo de Arte">
+                    <img loading="lazy" src="img_bonus/Bonus-01-min.webp" alt="Vivendo de Arte">
                     <div class="bonus_texts">
                         <div class="title_4_b">
                             <h2>BÔNUS 01</h2>
@@ -392,7 +357,7 @@ src="https://www.facebook.com/tr?id=2919974364954626&ev=PageView&noscript=1"
                 </div>
 
                 <div class="bonus_2">
-                    <img src="img_bonus/Bonus-02-min.webp" alt="Divulgando seus Desenhos no Instagram">
+                    <img loading="lazy" src="img_bonus/Bonus-02-min.webp" alt="Divulgando seus Desenhos no Instagram">
                     <div class="bonus_texts">
                         <div class="title_4_b">
                             <h2>BÔNUS 02</h2>
@@ -411,7 +376,7 @@ src="https://www.facebook.com/tr?id=2919974364954626&ev=PageView&noscript=1"
                 </div>
 
                 <div class="bonus_3">
-                    <img src="img_bonus/Bonus-03-min.webp" alt="Canal no Youtube">
+                    <img loading="lazy" src="img_bonus/Bonus-03-min.webp" alt="Canal no Youtube">
                     <div class="bonus_texts">
                         <div class="title_4_b">
                             <h2>BÔNUS 03</h2>
@@ -430,7 +395,7 @@ src="https://www.facebook.com/tr?id=2919974364954626&ev=PageView&noscript=1"
                 </div>
 
                 <div class="bonus_4">
-                    <img src="img_bonus/Bonus-04-min.webp" alt="Expert em 1 Dia">
+                    <img loading="lazy" src="img_bonus/Bonus-04-min.webp" alt="Expert em 1 Dia">
                     <div class="bonus_texts">
                         <div class="title_4_b">
                             <h2>BÔNUS 04</h2>
@@ -448,7 +413,7 @@ src="https://www.facebook.com/tr?id=2919974364954626&ev=PageView&noscript=1"
                 </div>
 
                 <div class="bonus_5">
-                    <img src="img_bonus/Bonus-05-min.webp" alt="Transformando Pessoas em animes">
+                    <img loading="lazy" src="img_bonus/Bonus-05-min.webp" alt="Transformando Pessoas em animes">
                     <div class="bonus_texts">
                         <div class="title_4_b">
                             <h2>BÔNUS 05</h2>
@@ -467,7 +432,7 @@ src="https://www.facebook.com/tr?id=2919974364954626&ev=PageView&noscript=1"
                 </div>
 
                 <div class="bonus_6">
-                    <img src="img_bonus/Comunidade-de-Alunos-no-Telegram.webp" alt="Área Exclusiva de Alunos">
+                    <img loading="lazy" src="img_bonus/Comunidade-de-Alunos-no-Telegram.webp" alt="Área Exclusiva de Alunos">
                     <div class="bonus_texts">
                         <div class="title_4_b">
                             <h2>BÔNUS 06</h2>
@@ -504,7 +469,7 @@ src="https://www.facebook.com/tr?id=2919974364954626&ev=PageView&noscript=1"
             <div class="container_5_int">
                 <div class="area_criador">
 
-                    <img src="img/wpp-1.webp" alt="Bruno Jenisch" />
+                    <img loading="lazy" src="img/wpp-1.webp" alt="Bruno Jenisch" />
                     <div class="criador_texts">
                         <div class="title_criador">
                             <h2>QUEM É O CRIADOR DA FÓRMULA DA ARTE?</h2>
@@ -537,18 +502,18 @@ src="https://www.facebook.com/tr?id=2919974364954626&ev=PageView&noscript=1"
                     <h2>Depoimentos de alguns alunos da Fórmula da Arte</h2>
                     <div class="videos">
                         <div class="video_1">
-                            <video preload="auto" src="videos/Lohan-Depoimento-Anime-Express.mp4" controls
+                            <video poster="img/play.webp" preload="auto" src="videos/Lohan-Depoimento-Anime-Express.mp4" controls
                                 controlslist="nodownload"></video>
                         </div>
                         <div class="video_2">
-                            <video preload="auto" src="videos/Depoimento-Sara.mp4" controls controlslist="nodownload"></video>
+                            <video poster="img/play.webp" preload="auto" src="videos/Depoimento-Sara.mp4" controls controlslist="nodownload"></video>
                         </div>
                         <div class="video_3">
-                            <video preload="auto" src="videos/Depoimento-Mizael-Rodrigues-Anime-Express.mp4" controls
+                            <video poster="img/play.webp" preload="auto" src="videos/Depoimento-Mizael-Rodrigues-Anime-Express.mp4" controls
                                 controlslist="nodownload"></video>
                         </div>
                         <div class="video_4">
-                            <video preload="auto" src="videos/Depoimento-Regina.mp4" controls controlslist="nodownload"></video>
+                            <video poster="img/play.webp" preload="auto" src="videos/Depoimento-Regina.mp4" controls controlslist="nodownload"></video>
                         </div>
                     </div>
                     <div class="alunos_desenhos">
@@ -808,6 +773,45 @@ src="https://www.facebook.com/tr?id=2919974364954626&ev=PageView&noscript=1"
         </div>
     </div>
 
+    <script>
+
+        function whatsaap() {
+            //Botão whatsaap
+            let whats = document.querySelector(".whatsaap");
+            setTimeout(() => {
+                whats.style.display = "flex";
+            }, 10000);//Atualmente 10 segundos
+
+            //Número em cima do botão
+            let icon = document.querySelector(".icon_w");
+            setTimeout(() => {
+                icon.style.display = "flex";
+            }, 20000);//Atualmente 20 segundos
+
+        }
+        whatsaap();
+
+        function thumb() {
+            let thumbnail = document.querySelector(".thumbnail");
+            let close = document.querySelector(".close");
+
+            var video = document.getElementById("video_principal");
+
+            thumbnail.addEventListener("click", () => {
+                video.autoplay = true;
+                video.load();
+                document.querySelector(".modal").style.display = "flex";
+
+            });
+
+            close.addEventListener("click", () => {
+                document.querySelector(".modal").style.display = "none";
+                video.pause();
+            });
+        }
+        thumb();
+
+    </script>
 </body>
 
 </html>

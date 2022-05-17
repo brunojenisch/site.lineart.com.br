@@ -93,6 +93,7 @@ body {
 }
 .banner {
     width: 100%;
+    height: 100%;
 }
 .whatsaap {
     display: none;
@@ -262,6 +263,7 @@ body {
 .arte_1 img , .arte_2 img, .arte_3 img, .arte_4 img, .arte_5 img, .arte_6 img, .arte_7 img, .arte_8 img {
     width: 100%;
     max-width: 430px;
+    height: 100%;
 }
 .arte_2, .arte_3, .arte_4, .arte_5, .arte_6, .arte_7, .arte_8 {
     margin-top: 40px;
