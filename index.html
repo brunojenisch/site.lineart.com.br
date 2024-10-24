@@ -822,6 +822,56 @@ src="https://www.facebook.com/tr?id=536401031901126&ev=PageView&noscript=1"
                 </div>
             </div>
         </div>
+        <script>
+  // Função para obter os parâmetros UTM da URL
+  function getUTMParameters() {
+    const params = new URLSearchParams(window.location.search);
+    const utms = {};
+
+    // Lista de UTM que queremos capturar
+    const utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+
+    utmKeys.forEach((key) => {
+      if (params.has(key)) {
+        utms[key] = params.get(key);
+        // Armazena no localStorage
+        localStorage.setItem(key, params.get(key));
+      }
+    });
+
+    return utms;
+  }
+
+  // Função para adicionar UTMs aos links de checkout
+  function appendUTMParametersToCheckoutLinks() {
+    const checkoutLinks = document.querySelectorAll('a[href*="https://pay.kiwify.com.br/"]');
+    
+    checkoutLinks.forEach(link => {
+      let url = new URL(link.href);
+      const params = new URLSearchParams(url.search);
+
+      // Adiciona os parâmetros UTM armazenados ao link de checkout
+      const utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+
+      utmKeys.forEach((key) => {
+        const storedValue = localStorage.getItem(key);
+        if (storedValue) {
+          params.set(key, storedValue);
+        }
+      });
+
+      url.search = params.toString();
+      link.href = url.toString();
+    });
+  }
+
+  // Executa as funções
+  document.addEventListener('DOMContentLoaded', () => {
+    getUTMParameters(); // Captura e armazena os parâmetros UTM na página inicial
+    appendUTMParametersToCheckoutLinks(); // Adiciona UTMs aos links de checkout
+  });
+</script>
+
     </footer>
     <div class="copyright">
         <div class="copyright_texts">
