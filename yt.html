@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Fórmula da Arte – A Maior Escola de Desenhos Online do Brasil</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Importa a fonte Montserrat */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        /* Estiliza a imagem promonatal com tamanho responsivo */
+        .promonatal-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Aplica fonte Montserrat e margens nos títulos */
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700; /* Títulos com peso grosso */
+            margin: 5px;
+        }
+
+        /* Mantém os outros textos com espessura normal */
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400; /* Peso normal para os parágrafos */
+        }
+    </style>
+
+    <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '536401031901126');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=536401031901126&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+</head>
+
+<body>
+    <section>
+        <div class="video_principal">
+            <div class="area_principal">
+                <!-- Imagem promonatal adicionada acima do título -->
+                <img class="promonatal-img" src="img/headmaster.webp" alt="Promoção Natal Das Crianças" />
+                
+                <img class="thumbnail" src="img/thumbnail.gif" />
+                <div class="sound">
+        <img src="img/volume-up.svg" class="volume_up" /><p>Verifique se o som está ligado. Aguarde até 10 segundos para o vídeo carregar.</p>
+            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="banner">
+        <img src="img/banner.webp" />
+    </section>
+    <div class="icon_w">
+        <h2>1</h2>
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=5548988222205&text=Ol%C3%A1%20Jade,%20Quero%20Saber%20Mais%20Sobre%20a%20F%C3%B3rmula%20Da%20Arte" target="_blanck">
+        <div class="whatsaap"></div>
+    </a>
+
+    <div class="modal">
+        <div class="area_modal">
+            <video id="video_principal" src="videos/Vsl Curta Com Trilha Sonora.mp4" controlslist="nodownload"></video>
+            <div class="close">X</div>
+        </div>
+
+    </div>
+
+    <script>
+        let icon = document.querySelector(".icon_w");
+
+        setTimeout(() => {
+            icon.style.display = "flex";
+        }, 30000);
+
+        function thumb() {
+            let thumbnail = document.querySelector(".thumbnail");
+            let close = document.querySelector(".close");
+
+            var video = document.getElementById("video_principal");
+
+            thumbnail.addEventListener("click", () => {
+                video.autoplay = true;
+                video.load();
+                document.querySelector(".modal").style.display = "flex";
+
+            });
+
+            close.addEventListener("click", () => {
+                document.querySelector(".modal").style.display = "none";
+                video.pause();
+            });
+
+
+        }
+        thumb();
+    </script>
+    <section class="curso">
+        <div class="container_1">
+            <div class="container_1_int">
+                <div class="text_img_1">
+                    <img src="img/curso-minificado.webp" />
+                </div>
+                <div class="area_curso">
+                    <div class="curso_1">
+                        <div class="icon_1">
+                            <img src="img/icon_1.webp" />
+                        </div>
+                        <div class="title_1">
+                            <h3>CURSO 100% ONLINE</h3>
+                        </div>
+                        <div class="sub_title_1">
+                            <p>Assista de qualquer dispositivo: computador, smartphone, tablet</p>
+                        </div>
+                    </div>
+                    <div class="curso_2">
+                        <div class="icon_2">
+                            <img src="img/icon_2.webp" />
+                        </div>
+                        <div class="title_1">
+                            <h3>+100 VIDEO AULAS</h3>
+                        </div>
+                        <div class="sub_title_1">
+                            <p>Aulas didáticas, com exercícios práticos que desenvolvem a habilidade de desenhar</p>
+                        </div>
+                    </div>
+                    <div class="curso_3">
+                        <div class="icon_3">
+                            <img src="img/icon_3.webp" />
+                        </div>
+                        <div class="title_1">
+                            <h3>ACESSO VITALÍCIO</h3>
+                        </div>
+                        <div class="sub_title_1">
+                            <p>Você paga uma única vez, e pode acessar o curso para sempre</p>
+                        </div>
+                    </div>
+                    <div class="curso_4">
+                        <div class="icon_4">
+                            <img src="img/icon_4.webp" />
+                        </div>
+                        <div class="title_1">
+                            <h3>LIBERADO 24H/DIA</h3>
+                        </div>
+                        <div class="sub_title_1">
+                            <p>Assista quando quiser, a qualquer hora</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div class="container_2">
+            <div class="container_2_int">
+                <div class="text_2">
+                    <h3>Veja todos os Cursos que <br>Fazem Parte da Fórmula da Arte</h3>
+                </div>
+                <div class="area_arte">
+                    <div class="arte">
+                        <div class="arte_1">
+                            <img src="img/Curso-de-Desenho-Infantil.webp" alt="CURSO DE DESENHO INFANTIL">
+
+                            <div class="arte_texts">
+                                <div class="title_2">
+                                    <h2>Curso #01</h2>
+                                </div>
+                                <div class="sub_title_2">
+                                    <h2>CURSO DE DESENHO INFANTIL</h2>
+                                </div>
+                                <div class="text">
+                                    <p>
+                                        Este é curso é para as crianças a partir de 4 anos de idade,
+                                        e para quem está iniciando na arte.
+                                        Aqui eu pego na mão do aluno e ensino toda as técnicas bases da arte de
+                                        desenhar.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arte_2">
+
+                            <div class="arte_texts">
+                                <div class="title_2">
+                                    <h2>Curso #02</h2>
+                                </div>
+                                <div class="sub_title_2">
+                                    <h2>ANIME EXPRESS</h2>
+                                </div>
+                                <div class="text">
+                                    <p>
+                                        Seu Filho gosta de Animes? Este é o mais completo curso de Desenho Anime do
+                                        Brasil,
+                                        ele vai aprender desde o básico ao avançado, tudo passo a passo em detalhes.
+                                    </p>
+                                </div>
+                            </div>
+                            <img src="img/Imagem-Anime-Express.webp" alt="ANIME EXPRESS">
+
+                        </div>
+                        <div class="arte_3">
+                            <img src="img/Realismo-Express.webp" alt="REALISMO EXPRESS">
+                            <div class="arte_texts">
+                                <div class="title_2">
+                                    <h2>Curso #03</h2>
+                                </div>
+                                <div class="sub_title_2">
+                                    <h2>REALISMO EXPRESS</h2>
+                                </div>
+                                <div class="text">
+                                    <p>
+                                        Neste curso o Aluno vai aprender a transformar seus Desenhos em verdadeiras
+                                        Fotografias através da Técnica de desenho Realista.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="arte_4">
+
+                            <div class="arte_texts">
+                                <div class="title_2">
+                                    <h2>Curso #04</h2>
+                                </div>
+                                <div class="sub_title_2">
+                                    <h2>CURSO DESENHANDO PRINCESAS</h2>
+                                </div>
+                                <div class="text">
+                                    <p>
+                                        Sua Filha sonha em Desenhar a Frozen e outras Princesas como a Rapunzel e
+                                        Cinderela?
+                                        Aqui ela não só vai aprender a fazer suas princesas como também vai ser capaz de
+                                        criar princesas a partir da Imaginação.
+                                    </p>
+                                </div>
+                            </div>
+                            <img src="img/Desenhando-Princesas.webp" alt="DESENHANDO PRINCESAS">
+
+                        </div>
+                        <div class="arte_5">
+                            <img src="img/Desenhando-Animais.webp" alt="DESENHANDO ANIMAIS">
+                            <div class="arte_texts">
+                                <div class="title_2">
+                                    <h2>Curso #05</h2>
+                                </div>
+                                <div class="sub_title_2">
+                                    <h2>CURSO DESENHANDO ANIMAIS</h2>
+                                </div>
+                                <div class="text">
+                                    <p>
+                                        Você ou seu filho gosta de desenhar Animais?
+                                        Esse treinamento é perfeito pois aqui vai aprender a criar todo os tipos de
+                                        animais seguindo um método infalível.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="arte_6">
+                            <div class="arte_texts">
+                                <div class="title_2">
+                                    <h2>Curso #06</h2>
+                                </div>
+                                <div class="sub_title_2">
+                                    <h2>CURSO DESENHANDO PAISAGENS</h2>
+                                </div>
+                                <div class="text">
+                                    <p>
+                                        Neste treinamento o aluno vai aprender a criar cenários e paisagens, aplicando
+                                        técnicas simples e fáceis, tudo passo a passo.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <img src="img/como-desenhar-cenarios-1.webp" alt="DESENHANDO PAISAGENS">
+
+                        </div>
+                        <div class="arte_7">
+                            <img src="img/Como-Desenhar-Em-Perspectiva.webp" alt="DESENHANDO EM PERSPECTIVA">
+                            <div class="arte_texts">
+                                <div class="title_2">
+                                    <h2>Curso #07</h2>
+                                </div>
+                                <div class="sub_title_2">
+                                    <h2>CURSO DESENHANDO EM PERSPECTIVA</h2>
+                                </div>
+                                <div class="text">
+                                    <p>
+                                        Neste Curso o Aluno vai aprender a dar profundidade nos desenhos através da
+                                        perspectiva,
+                                        Com as técnicas ensinadas neste curso os Desenhos literalmente sairão do Papel.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="arte_8">
+                            <div class="arte_texts">
+                                <div class="title_2">
+                                    <h2>Curso #08</h2>
+                                </div>
+                                <div class="sub_title_2">
+                                    <h2>CURSO COMO DESENHAR CHIBIS</h2>
+                                </div>
+                                <div class="text">
+                                    <p>
+                                        Neste curso o Aluno vai aprender a desenhar Personagens Fofinhos no Estilo
+                                        Chibi, Um dos Estilos de Desenho Japonês
+                                    </p>
+                                </div>
+                            </div>
+
+                            <img src="img/Desenhando-Chibis.webp" alt="COMO DESENHAR CHIBIS">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="certificate">
+        <div class="container_3">
+            <div class="container_3_int">
+                <div class="area_certificate">
+
+                    <img src="img/Certificado-Formula-da-Arte.webp" alt="Certificado" />
+                    <div class="certificate_texts">
+                        <div class="title_certificate">
+                            <h2>Certificado de Conclusão</h2>
+                        </div>
+                        <div class="sub_title_certificate">
+                            <p>
+                                Certificado de Conclusão
+                                Além de Todo esse Conteúdo, o Aluno ainda receberá ao Final do Treinamento seu
+                                Certificado de Conclusão que poderá ser apresentado e usado onde quiser.<br><br><br>
+                                Será seu emblema de que você conseguiu completar sua jornada e realizar o seu grande
+                                sonho de se tornar um Artista Profissional.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bonus_e">
+        <img src="img_bonus/bonus-anime-express-768x644-1.webp" alt="Bonus anime">
+    </section>
+
+    <section class="bonus">
+        <div class="container_4">
+            <div class="container_4_int">
+                <div class="title_4">
+                    <h2>Além dos 08 cursos completos,
+                        vou disponibilizar + <div class="w">06 Bônus</div>
+                    </h2>
+                </div>
+                <div class="sub_title_4">
+                    <h2>
+                        Aqui estão os bônus que vou disponibilizar para você ao garantir sua vaga hoje na
+                        <div class="s">Escola Fórmula da Arte</div>
+                    </h2>
+                </div>
+
+                <div class="bonus_1">
+                    <img src="img_bonus/Bonus-01-min.webp" alt="Vivendo de Arte">
+                    <div class="bonus_texts">
+                        <div class="title_4_b">
+                            <h2>BÔNUS 01</h2>
+                        </div>
+                        <div class="sub_title_4_b">
+                            <h2>Vivendo de Arte</h2>
+                        </div>
+                        <div class="text_4_b">
+                            <p>
+                                Você já pensou em viver exclusivamente de Desenho,
+                                ou pelo menos poder fazer uma boa renda extra com sua arte?
+                                Você vai aprender as melhores estratégias para você poder ganhar um bom Dinheiro com sua
+                                arte.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bonus_2">
+                    <img src="img_bonus/Bonus-02-min.webp" alt="Divulgando seus Desenhos no Instagram">
+                    <div class="bonus_texts">
+                        <div class="title_4_b">
+                            <h2>BÔNUS 02</h2>
+                        </div>
+                        <div class="sub_title_4_b">
+                            <h2>Divulgando seus Desenhos no Instagram</h2>
+                        </div>
+                        <div class="text_4_b">
+                            <p>
+                                Você vai aprender uma estratégia para construir um Instagram de Sucesso com muitos
+                                seguidores através dos seus desenhos, transformando o Instagram em uma máquina de
+                                dinheiro.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bonus_3">
+                    <img src="img_bonus/Bonus-03-min.webp" alt="Canal no Youtube">
+                    <div class="bonus_texts">
+                        <div class="title_4_b">
+                            <h2>BÔNUS 03</h2>
+                        </div>
+                        <div class="sub_title_4_b">
+                            <h2>Canal no Youtube</h2>
+                        </div>
+                        <div class="text_4_b">
+                            <p>
+                                Nestas aulas eu vou te revelar todos os segredos por trás dos grandes Canais do Youtube
+                                e ainda vou te mostrar como você pode fazer dessa ferramenta sua principal fonte de
+                                renda.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bonus_4">
+                    <img src="img_bonus/Bonus-04-min.webp" alt="Expert em 1 Dia">
+                    <div class="bonus_texts">
+                        <div class="title_4_b">
+                            <h2>BÔNUS 04</h2>
+                        </div>
+                        <div class="sub_title_4_b">
+                            <h2>Expert em 1 Dia</h2>
+                        </div>
+                        <div class="text_4_b">
+                            <p>
+                                Nesta Aula eu vou te ensinar uma técnica de Desenho
+                                que após você aprender ela, você será capaz de desenhar qualquer coisa no mesmo dia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bonus_5">
+                    <img src="img_bonus/Bonus-05-min.webp" alt="Transformando Pessoas em animes">
+                    <div class="bonus_texts">
+                        <div class="title_4_b">
+                            <h2>BÔNUS 05</h2>
+                        </div>
+                        <div class="sub_title_4_b">
+                            <h2>Transformando Pessoas em animes</h2>
+                        </div>
+                        <div class="text_4_b">
+                            <p>
+                                Eu vou te revelar um método pouco ensinado
+                                que irá te capacitar a transformar literalmente qualquer pessoa em um personagem de
+                                Anime.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bonus_6">
+                    <img src="img_bonus/Comunidade-de-Alunos-no-Telegram.webp" alt="Área Exclusiva de Alunos">
+                    <div class="bonus_texts">
+                        <div class="title_4_b">
+                            <h2>BÔNUS 06</h2>
+                        </div>
+                        <div class="sub_title_4_b">
+                            <h2>Área Exclusiva de Alunos</h2>
+                        </div>
+                        <div class="text_4_b">
+                            <p>
+                                O Aluno estará sendo acompanhado de perto, dentro do Grupo da turma onde os
+                                Professores irão acompanhar de perto aula por aula, exercício por exercício, tudo o que
+                                o aluno realizar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="title_valor">
+                    <h2>O VALOR SOMADO DE TODOS OS BÔNUS É DE:</h2>
+                </div>
+                <div class="valor">
+                    <h3 style="color: red; font-size: 60px;"><strike>R$ 310,00</strike></h3>
+        
+                </div>
+                <div class="gratis">
+                    <h2>E ELES SERÃO GRÁTIS PARA VOCÊ HOJE!</h2>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="criador">
+        <div class="container_5">
+            <div class="container_5_int">
+                <div class="area_criador">
+
+                    <img src="img/wpp-1.webp" alt="Bruno Jenisch" />
+                    <div class="criador_texts">
+                        <div class="title_criador">
+                            <h2>QUEM É O CRIADOR DA FÓRMULA DA ARTE?</h2>
+                        </div>
+                        <div class="sub_title_criador">
+                            <p>
+                                Com mais de 09 anos de estudo e prática com os desenhos, Eu <strong>Bruno
+                                    Brito</strong> serei o guia
+                                ao longo de todo treinamento.<br><br><br>
+                                A vida toda sempre fui fascinado pela arte de Desenhar, minha mãe na época sempre
+                                comprava aquelas revistinhas de Desenhar, sempre buscando meios de investir no meu
+                                Futuro.<br><br><br>
+                                Depois de muitos pais me procurarem, pois queriam desesperadamente tirar seus filhos da
+                                frente dos Jogos e Redes Sociais,
+                                eu fui atrás e criei um Curso Especial para Crianças de Todas as idades e foi assim que
+                                nasceu <strong>A Fórmula da Arte.</strong>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg_alunos">
+        <div class="container_6">
+            <div class="container_6_int">
+                <div class="area_alunos">
+                    <h2>Depoimentos de alguns alunos da Fórmula da Arte</h2>
+                   <div class="video_1">
+                        <video src="videos/Lohan-Depoimento-Anime-Express.mp4" controls controlslist="nodownload" 
+       poster="img/thumb.jpg" preload="none"></video>
+                    </div>
+                    
+                    <div class="video_2">
+                        <video src="videos/Depoimento-Sara.mp4" controls controlslist="nodownload" 
+       poster="img/thumb.jpg" preload="none"></video>
+                    </div>
+                    
+                    <div class="video_3">
+                        <video src="videos/Depoimento-Mizael-Rodrigues-Anime-Express.mp4" controls controlslist="nodownload" 
+       poster="img/thumb.jpg" preload="none"></video>
+                    </div>
+                    
+                    <div class="video_4">
+                        <video src="videos/Depoimento-Regina.mp4" controls controlslist="nodownload" 
+       poster="img/thumb.jpg" preload="none"></video>
+                    </div>
+
+                    <div class="alunos_desenhos">
+                        <h2>
+                            Desenhos de alguns alunos da Fórmula da Arte
+                        </h2>
+                        <img src="img/Desenhos-dos-alunos-1-1.webp" alt="Desenhos dos alunos" />
+                    </div>
+
+                    <div class="area_slide">
+                        <div class="slides">
+                            <input type="radio" name="slide" id="slide_1" checked>
+                            <input type="radio" name="slide" id="slide_2">
+                            <input type="radio" name="slide" id="slide_3">
+                            <input type="radio" name="slide" id="slide_4">
+
+                            <div class="slide s1">
+                                <img src="img_slide/1-depoimentos-anime-express.webp" />
+                            </div>
+                            <div class="slide">
+                                <img src="img_slide/2-depoimentos-anime-express.webp" />
+                            </div>
+                            <div class="slide">
+                                <img src="img_slide/3-depoimentos-anime-express.webp" />
+                            </div>
+                            <div class="slide">
+                                <img src="img_slide/4-depoimentos-anime-express.webp" />
+                            </div>
+                        </div>
+
+                        <div class="navigation">
+                            <label class="bar" for="slide_1"></label>
+                            <label class="bar" for="slide_2"></label>
+                            <label class="bar s3" for="slide_3"></label>
+                            <label class="bar s4" for="slide_4"></label>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section>
+        <div class="container_7">
+            <div class="container_7_int">
+                <div class="area_price">
+                    <div class="title_7">
+                        <h2>Essa Oferta é<br> por tempo limitado.</h2>
+                    </div>
+                    <div class="area_price_int">
+                        <div class="prices">
+                            <div class="price">
+                                <img src="img/check.svg">
+
+                                <div class="area_texts_7">
+                                    <h2>Curso de Desenho Infantil………………....................………… <strike>R$
+                                            97,00</strike></h2>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <img src="img/check.svg">
+
+                                <div class="area_texts_7">
+                                    <h2>Curso Anime Express…….........................................…………..<strike>R$
+                                            97,00</strike></h2>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <img src="img/check.svg">
+
+                                <div class="area_texts_7">
+                                    <h2>Curso Realismo Express…………..……….................................<strike>R$
+                                            97,00</strike></h2>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <img src="img/check.svg">
+
+                                <div class="area_texts_7">
+                                    <h2>Curso Desenhando Princesas…………..……….....................<strike>R$
+                                            97,00</strike></h2>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <img src="img/check.svg">
+
+                                <div class="area_texts_7">
+                                    <h2>Curso Desenhando Animais…………..………........................<strike>R$
+                                            97,00</strike></h2>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <img src="img/check.svg">
+
+                                <div class="area_texts_7">
+                                    <h2> Curso Desenhando Paisagens…………..………....................<strike>R$
+                                            97,00</strike></h2>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <img src="img/check.svg">
+
+                                <div class="area_texts_7">
+                                    <h2>Curso Desenhando Chibis…………..……….............................<strike>R$
+                                            97,00</strike></h2>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <img src="img/check.svg">
+
+                                <div class="area_texts_7">
+                                    <h2>Curso Desenhando em Perspectiva….…........................<strike>R$
+                                            97,00</strike></h2>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <img src="img/check.svg">
+
+                                <div class="area_texts_7">
+                                    <h2>+ 05 Bônus Exclusivos Juntamente com todos os cursos</h2>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <img src="img/check.svg">
+
+                                <div class="area_texts_7">
+                                    <h2>Acesso a Descontos Exclusivos de outros treinamentos</h2>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <img src="img/check.svg">
+
+                                <div class="area_texts_7">
+                                    <h2>Acesso ao Grupo Secreto de Alunos da Turma</h2>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <img src="img/check.svg">
+
+                                <div class="area_texts_7">
+                                    <h2>Liberdade de Acesso 24H/Dia 7 dia por semana</h2>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="sub_title_7">
+                        <h2>Porém, por Tempo Limitado, você poderá fazer a inscrição por um <b>valor especial de
+                                lançamento,</b> por apenas:</h2>
+                    </div>
+                    <div class="price_split">
+                        <div class="split">
+                            <h3 style="color: green; font-size: 55px; text-align: center; font-weight: 900px;">
+  R$ 19,78 ou <br> R$ 197 à vista
+</h3>
+                        </div>
+                        <a href="https://pay.kiwify.com.br/hCt4qyy?src=yt" target="_blank">
+                            <div class="button_price">
+                                <h2>SIM, QUERO INVESTIR NO MEU FILHO(A)</h2>
+                            </div>
+                        </a>
+                        <img loading="lazy" src="img/Seguro-de-compra.webp" alt="Seguro de compra" />
+                        <p>Menos de 1 Real Por Dia...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="garantia">
+        <div class="container_8">
+            <div class="container_8_int">
+                <div class="area_garantia">
+                    <div class="title_8">
+                        <h3 style="color: black; font-size: 55px; text-align: center; font-weight: 900px;">Garantia Incondional De 7 Dias</h3>
+
+                    </div>
+                    <div class="area_garantia_int">
+                        <img loading="lazy" src="img/selo-7-dias-de-garantia-2.webp" alt="garantia" />
+                        <div class="garantia_texts">
+                            <div class="title_garantia">
+                                <h2>FIQUE 100% SATISFEITO OU PEÇA SEU DINHEIRO DE VOLTA.</h2>
+                            </div>
+                            <div class="sub_title_garantia">
+                                <p>
+                                    Fique Tranquilo pois a “Fórmula da Arte” conta com uma garantia de 100% de
+                                    satisfação. Isso quer dizer que você tem 7 dias para acessar o conteúdo e se ainda
+                                    achar que o curso não é para você,
+                                    basta pedir reembolso e devolverei seu dinheiro de forma integral. Sem perguntas e
+                                    questionamentos. Assim você realiza sua compra completamente seguro.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+
+        <div class="container_9">
+            <div class="container_9_int">
+                <div class="area_9">
+                    <div class="title_9">
+                        <h2>Siga os 3 Passos Seguintes abaixo para Garantir o lugar na Fórmula da Arte</h2>
+                    </div>
+                    <div class="sub_title_9">
+                        <h2>Seu acesso imediato ao curso Fórmula da Arte está a apenas 3 simples passos de você. Tudo o
+                            que você precisa fazer é:</h2>
+                    </div>
+                    <img loading="lazy" src="img/inscricao.webp" />
+                    <div class="sub_title_9_1">
+                        <h2>Siga o Passo 01 Abaixo:</h2>
+                    </div>
+                    <a href="https://pay.kiwify.com.br/hCt4qyy?src=yt" target="_blank">
+                        <div class="button_price">
+                            <h2>SIM, QUERO GARANTIR A INSCRIÇÃO</h2>
+                        </div>
+                    </a>
+                    <img loading="lazy" class="seguro_selo" src="img/Seguro-de-compra.webp" alt="Seguro de compra" />
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer id="bg_footer">
+        <div class="container_footer">
+            <div class="container_footer_int">
+                <div class="area_footer">
+                    <img loading="lazy" src="img/whatsaap.webp" alt="whatsaap" />
+                    <div class="area_footer_texts">
+                        <div class="title_footer">
+                            <h2>Quer um atendimento exclusivo pelo <div class="color_w">WhatsApp?</div>
+                            </h2>
+                        </div>
+                        <div class="sub_title_footer">
+                            <p>No caso de dúvida basta acionar a nossa central de Atendimento via WhatsApp pelo número
+                                abaixo:</p>
+                        </div>
+                        <div class="number">
+                            <h2>(48) 98822-2205</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+  // Função para obter os parâmetros UTM da URL
+  function getUTMParameters() {
+    const params = new URLSearchParams(window.location.search);
+    const utms = {};
+
+    // Lista de UTM que queremos capturar
+    const utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+
+    utmKeys.forEach((key) => {
+      if (params.has(key)) {
+        utms[key] = params.get(key);
+        // Armazena no localStorage
+        localStorage.setItem(key, params.get(key));
+      }
+    });
+
+    return utms;
+  }
+
+  // Função para adicionar UTMs aos links de checkout
+  function appendUTMParametersToCheckoutLinks() {
+    const checkoutLinks = document.querySelectorAll('a[href*="https://pay.kiwify.com.br/"]');
+    
+    checkoutLinks.forEach(link => {
+      let url = new URL(link.href);
+      const params = new URLSearchParams(url.search);
+
+      // Adiciona os parâmetros UTM armazenados ao link de checkout
+      const utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+
+      utmKeys.forEach((key) => {
+        const storedValue = localStorage.getItem(key);
+        if (storedValue) {
+          params.set(key, storedValue);
+        }
+      });
+
+      url.search = params.toString();
+      link.href = url.toString();
+    });
+  }
+
+  // Executa as funções
+  document.addEventListener('DOMContentLoaded', () => {
+    getUTMParameters(); // Captura e armazena os parâmetros UTM na página inicial
+    appendUTMParametersToCheckoutLinks(); // Adiciona UTMs aos links de checkout
+  });
+</script>
+
+    </footer>
+    <div class="copyright">
+        <div class="copyright_texts">
+            <h2>Todos os Direitos Reservados - Fórmula da Arte
+                Whatsapp de Atendimento: (48) 98822-2205</h2>
+            <p>Política de Privacidade e Termos de uso</p>
+        </div>
+    </div>
+
+    <script>
+
+        function whatsaap() {
+            //Botão whatsaap
+            let whats = document.querySelector(".whatsaap");
+            setTimeout(() => {
+                whats.style.display = "flex";
+            }, 35000);//Atualmente 35 segundos
+
+            //Número em cima do botão
+            let icon = document.querySelector(".icon_w");
+            setTimeout(() => {
+                icon.style.display = "flex";
+            }, 45000);//Atualmente 45 segundos
+
+        }
+        whatsaap();
+
+        function thumb() {
+            let thumbnail = document.querySelector(".thumbnail");
+            let close = document.querySelector(".close");
+
+            var video = document.getElementById("video_principal");
+
+            thumbnail.addEventListener("click", () => {
+                video.autoplay = true;
+                video.load();
+                document.querySelector(".modal").style.display = "flex";
+
+            });
+
+            close.addEventListener("click", () => {
+                document.querySelector(".modal").style.display = "none";
+                video.pause();
+            });
+        }
+        thumb();
+
+    </script>
+</body>
+
+</html>
