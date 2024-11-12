@@ -1,4 +1,6 @@
-<?php
+https://lineart.com.br/ARTFLIX
+https://google.com/
+https://www.instagram.com/brunojenisch/<?php
 /*   __________________________________________________
     |  Script by Monsters Trick - Rotating Link V.2.3  |
     |              on 2013-01-28 20:16:49              |
